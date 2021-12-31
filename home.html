@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <title>Lista de tarefa</title>
+</head>
+<body>
+
+  <header id="cab">
+    
+    <div id="toChoose"><select placeholder="lista de tarefas">
+      <option value="">oi</option>
+      <option value="">pessoal</option>
+      <option value="">Estudos</option>
+      <option value="">Estudos</option>
+     
+  </select><div></div>
+  <button id="addmatriz"><p>Add Nova Matriz</p></button>
+  <div id="search">
+    <input type="text" id="txbusca" placeholder="Buscar..."/>
+  </div>
+
+
+
+
+  
+</header>
+
+
+
+
+  <main>
+
+
+    <button id="addmore"onclick="openNewWindow()" > <p>+</p> </button> 
+
+    
+    <button id="close"onclick="closeNewWindow()" > <p>X</p> </button>
+
+    <nav id="open">
+      <p>O que deve ser feito?
+      <input type="text" id="do" required></p>
+      <p>Prazo:.<input type="text" id="do2" required></p>
+
+      <p>Adicionar à lista:<br><select placeholder="lista de tarefas">
+
+        <option value="">Tarefa 1</option>
+        <option value="">Tarefa 2</option>
+        <option value="">Tarefa 3</option>
+        <option value="">Tarefa 4</option>
+        
+    </select></p>
+      </p>
+      <button id="ok" onclick="adicionar()">Adicionar</button>
+    </nav>
+
+
+    
+    <div id="todo">
+      <div class="todo__title" >
+          TODO - LIST
+      </div>
+
+      <div class="todo__list" id='todoList'>
+
+      </div>
+
+      <div class="todo__new-item" >
+          <div>&and;</div>
+          <input type="text" id="newItem" placeholder="Digite e pressione enter para adicionar a tarefa">
+          <div>&and;</div>
+
+
+      </div>
+    </div>
+
+
+  </main>
+  <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, modi. Debitis dignissimos nam ?</footer>
+</body>
+<script src="new.js"></script>
+</html>
